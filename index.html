@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="grid-with-gap.css">
+    <title>Css Grid exercise</title>
     <style>
 body {
   margin: 0;
@@ -45,49 +46,8 @@ body {
 
 
 
-      .grid-container {
-        display: grid;
-        /* block-level */
-        grid-template-columns: 1fr 2fr 1fr; 
-        /* Three columns with the middle one twice as wide as the others */
-        grid-template-rows: 200px 300px; 
-        /* Two rows with different heights */
-        gap: 5px; 
-}
 
-.grid-item-5 {
-        grid-column: 2 / 4; 
-        /* Span from the second column to the end */
-        grid-row: 2; 
-        /* Position at the second row */
-}
-
-
-.grid-item {
-        background-color: #8ca1a5;
-        color: white;
-        padding: 10px;
-        font-size: 20px;
-        text-align: center;
-      }
-      .item1-4 {
-        grid-column: 1;
-        grid-row: 1 / 3; 
-         /* Spanning from first to second row */
-      }
-      .item2 {
-        grid-column: 2;
-        grid-row: 1;
-      } /* First row, second column */
-      .item3 {
-        grid-column: 3;
-        grid-row: 1;
-      } /* First row, third column */
-      .item5-6 {
-        grid-column: 2 / 4; 
-        /* Spanning second and third columns */
-        grid-row: 2;
-      }
+      
 
       .footer {
         background-color: #333;
@@ -98,6 +58,11 @@ body {
         bottom: 0;
         width: 100%;
       }
+      img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* full container */
+}
     </style>
   
   <body>
@@ -118,28 +83,28 @@ body {
   </div>
 
     <div class="grid-container">
-      <div class="item1-4"><img src="pic1.jpg" alt="Cinque Terre" width="300" height="510 "></div>
+      <div class="item1-4"><img src="pic1.jpg" alt="Cinque Terre"></div>
       
-      <div class="item2"><img src="pic2.jpg" alt="Cinque Terre" width="550" height="120 "></div>
-      <div class="item3"><img src="pic3.jpg" alt="Cinque Terre" width="550" height="120 "></div>
+      <div class="item2"><img src="pic2.jpg" alt="Cinque Terre" ></div>
+      <div class="item3"><img src="pic3.jpg" alt="Cinque Terre"></div>
   
-      <div class="item5-6"><div class="content"><h3>Lorem Ipsum</h3><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis ligula lobortis quam ut.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum possimus placeat doloremque, maxime ab voluptatem, cum aliquid obcaecati totam nemo expedita eaque sit eius fuga blanditiis dolor laudantium earum?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor expedita reiciendis iure atque iusto quos dolore nobis ea itaque nesciunt, non odit nostrum perferendis ab dolorem quis totam, libero quasi.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis autem quos soluta temporibus corporis assumenda, amet alias placeat, quibusdam laboriosam ipsa voluptates. Inventore suscipit nulla laboriosam possimus, porro iure illo?</p>
+      <div class="item5-6"><div class="content"><h3>Lorem Ipsum</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam magni itaque eaque expedita, assumenda vitae dignissimos accusamus laudantium, quod dolorem alias officiis, laborum veritatis error dolores earum libero id a culpa nulla ea deleniti architecto enim. Rerum quaerat architecto sit in est perferendis dolore perspiciatis, id, temporibus, quibusdam repellat assumenda minima deserunt doloremque quod reiciendis deleniti sed quia laboriosam eveniet sapiente labore. Magni, hic praesentium reiciendis voluptas eligendi voluptate consequatur iste corrupti? Sapiente amet autem commodi labore laborum, nesciunt ducimus. Amet nemo repellat sapiente eius sequi dolore blanditiis eaque quaerat est repellendus sit laborum, voluptatem vitae sint mollitia expedita saepe, fugiat eum cupiditate ad neque a at. Optio incidunt ut perspiciatis cupiditate ullam aliquid quis ipsa nam consequatur doloribus maxime doloremque accusantium est debitis voluptas facilis, dolorum quisquam harum. Et eaque tempora qui voluptatem inventore eos cum neque reiciendis eveniet, pariatur aliquam minima earum ut. Rem ab facere perspiciatis consectetur eveniet, impedit alias libero veritatis inventore numquam aliquam natus unde at totam aspernatur adipisci eligendi. Earum obcaecati aut reiciendis perspiciatis laborum architecto illum, explicabo ipsam eligendi, id in repellat amet possimus fugit iste. Quasi magnam animi perferendis, odio tenetur ipsam non corrupti expedita inventore, optio quae eius, ipsum facere rem voluptate earum officia molestiae eum quam doloremque ea accusamus iste dolores? Ipsam, perferendis! Repudiandae ad tenetur accusamus molestias perspiciatis nesciunt hic veniam nihil voluptatibus ea! Saepe alias quia dolor suscipit iure repellat dolorem repudiandae consectetur id aspernatur aut ab cumque numquam optio mollitia aperiam a officiis quae vel aliquid, repellendus vero temporibus! Odio et non doloremque quia vitae quasi expedita neque, rerum laudantium, consequatur eos saepe ipsam beatae quod distinctio. Cum quidem doloribus temporibus deserunt consectetur odit delectus obcaecati iusto, quae distinctio! Molestias possimus, tenetur eos laudantium magnam sunt architecto ab autem beatae alias itaque eius blanditiis earum similique quidem quas laborum porro id. Mollitia cupiditate, animi ab quis ea culpa autem esse eum quibusdam, beatae nobis, dolorem accusantium odit nesciunt. Rerum consectetur nobis distinctio culpa quam autem odio cum corrupti repellat molestias officia, itaque asperiores blanditiis laudantium, beatae eligendi doloremque in? Dignissimos blanditiis aut laudantium, dolore eaque ipsum et, commodi at voluptatem eligendi vero modi suscipit corporis architecto velit nesciunt corrupti fugiat incidunt fugit pariatur voluptates animi cumque. Odio doloremque alias labore at harum incidunt, eveniet neque magni! Harum perferendis tenetur, placeat facere quod necessitatibus, modi corporis deserunt et, praesentium sapiente reiciendis at consequuntur. Cumque inventore est nulla id?</p>
+      
     </div></div>
 
     </div>
 
     
-    <div class="footer"><h4>Footer</h4></div>
+ 
 
     
 
-  </head>
-    <div class="footer"><h5 >copyright reserverd</h5>
+
+    
   </div>
+  <div class="footer"><p >&copy;2025 Zian Pan. All right reserverd</p>
   </body>
+
 
 
   
